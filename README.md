@@ -1,8 +1,8 @@
-First,
+### Development
 ```
-yarn build
+yarn development
 ```
-You might have to ^C to exit after build is done. Then,
+### Production
 ```
-yarn start
+yarn production
 ```
