@@ -1,3 +1,7 @@
+### Build node dependencies
+```
+yarn
+```
 ### Development
 ```
 yarn development
