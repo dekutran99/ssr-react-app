@@ -16,14 +16,13 @@
     "build-react": "react-scripts build",
     "start-react": "react-scripts start",
     "watch-react": "nodemon --watch ./src --exec \"yarn run build-react\"",
-
     "build-server": "NODE_ENV=development webpack --config webpack.server.js --mode=development -w",
     "start-server": "nodemon ./server-build/index.js",
     "watch-server": "nodemon --watch ./server --exec \"yarn build-server\"",
-
     "build": "npm-run-all -p build-server build-react",
-    "development": "npm-run-all -s build -p start-server watch-react watch-server",
-    "production": "npm-run-all -p build-server build-react -s start-server"
+    "clean-build": "rm -rf build server-build",
+    "develop": "npm-run-all -s build -p start-server watch-react watch-server",
+    "deploy": "npm-run-all -p build-server build-react -s start-server"
   },
   "eslintConfig": {
     "extends": "react-app"
