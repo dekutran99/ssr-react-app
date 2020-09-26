@@ -2,11 +2,11 @@
 ```
 yarn
 ```
-### Development
+### Develop
 ```
-yarn development
+yarn develop
 ```
 ### Production
 ```
-yarn production
+yarn deploy
 ```
